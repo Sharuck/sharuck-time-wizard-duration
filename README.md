@@ -1,73 +1,117 @@
-# Welcome to your Lovable project
 
-## Project info
+# Shaoli's Calculator 🕐
 
-**URL**: https://lovable.dev/projects/cdf806f8-224d-4e7c-9400-14789aab5299
+A modern, animated day-to-day hour calculator built with React, TypeScript, and Tailwind CSS. Calculate precise duration between any two dates and times with style!
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **Precise Calculations**: Calculate duration between any two dates and times
+- **Beautiful Animations**: Smooth transitions and loading animations
+- **Mobile Friendly**: Fully responsive design that works on all devices
+- **Export & Share**: Export results to PDF and share via native sharing
+- **Modern UI**: Glass morphism effects with gradient backgrounds
+- **Accessible**: Built with accessibility in mind using shadcn/ui components
 
-**Use Lovable**
+## 🚀 Quick Start
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cdf806f8-224d-4e7c-9400-14789aab5299) and start prompting.
+### Prerequisites
+- Node.js 18+ and npm
 
-Changes made via Lovable will be committed automatically to this repo.
+### Installation
 
-**Use your preferred IDE**
+1. **Clone or download this repository**
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+3. **Start development server:**
+   ```bash
+   npm run dev
+   ```
+4. **Open your browser to** `http://localhost:8080`
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Build for Production
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 🌐 Deploy to Vercel
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Upload to GitHub:**
+   - Create a new repository on GitHub
+   - Upload all files from this project
+   - Push to your repository
 
-**Use GitHub Codespaces**
+2. **Deploy with Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+   - Click "Deploy"
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Alternatively, use the Vercel CLI:
+```bash
+npm i -g vercel
+vercel
+```
 
-## What technologies are used for this project?
+## 📱 How to Use
 
-This project is built with:
+1. **Set Start Date & Time**: Choose your starting date and time
+2. **Set End Date & Time**: Choose your ending date and time  
+3. **Calculate**: Click the calculate button to see the magic happen
+4. **View Results**: See total hours plus detailed breakdown
+5. **Export/Share**: Save as PDF or share your results
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🛠️ Technology Stack
 
-## How can I deploy this project?
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **shadcn/ui** - Beautiful, accessible components
+- **Vite** - Fast build tool and dev server
+- **date-fns** - Modern date utility library
+- **Lucide React** - Beautiful icons
 
-Simply open [Lovable](https://lovable.dev/projects/cdf806f8-224d-4e7c-9400-14789aab5299) and click on Share -> Publish.
+## 📂 Project Structure
 
-## Can I connect a custom domain to my Lovable project?
+```
+src/
+├── components/
+│   ├── HourCalculator.tsx      # Main calculator component
+│   ├── DateTimePicker.tsx      # Date and time selection
+│   ├── LoadingAnimation.tsx    # Loading animations
+│   └── ResultDisplay.tsx       # Results with breakdown
+├── lib/
+│   ├── dateUtils.ts           # Date calculation utilities
+│   └── exportUtils.ts         # PDF export and sharing
+└── pages/
+    └── Index.tsx              # Main page
+```
 
-Yes, you can!
+## 🎨 Customization
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+The calculator is built with customization in mind:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Colors**: Modify the gradient colors in the Tailwind classes
+- **Animations**: Adjust animation durations and effects
+- **Layout**: Responsive grid system adapts to your needs
+- **Branding**: Easy to update text and styling
+
+## 💝 Created By
+
+**Sharuck** - Made with ❤️ for Shaoli
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🐛 Issues & Support
+
+If you encounter any issues or have questions:
+1. Check the console for any error messages
+2. Ensure all dependencies are installed correctly
+3. Verify your Node.js version is 18 or higher
+
+---
+
+**Happy Calculating! 🎉**
